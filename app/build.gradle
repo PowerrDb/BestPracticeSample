@@ -64,5 +64,6 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
     implementation "androidx.compose.material:material-icons-extended"
+    implementation 'com.microsoft.clarity:clarity:1.2.1-beta1'
 
 }

@@ -3,16 +3,9 @@ package com.best.practice
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.best.practice.screens.ListScreen
-import com.best.practice.screens.MainScreen
-import com.best.practice.ui.theme.BestPracticeSampleTheme
+import com.microsoft.clarity.Clarity
+import com.microsoft.clarity.ClarityConfig
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +14,8 @@ class MainActivity : ComponentActivity() {
             ListScreen()
            // MainScreen()
         }
+        val config = ClarityConfig("hu24hdg6ph")
+        Clarity.initialize(applicationContext, config)
     }
 }
 
